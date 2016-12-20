@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.randomuser.me	TRUE	/	FALSE	1999999999	__cfduid	d0ed942396d49cca59c7d924216be48fe1482254829
+
