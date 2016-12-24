@@ -1,0 +1,23 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "Landing Page para apresentação no Demo Day",
+  "main": "index.js",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emersonjds/Landing-Page-BankBox.git"
+  },
+  "author": "Emerson Jr",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/emersonjds/Landing-Page-BankBox/issues"
+  },
+  "homepage": "https://github.com/emersonjds/Landing-Page-BankBox#readme"
+}

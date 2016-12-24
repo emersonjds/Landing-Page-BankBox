@@ -141,6 +141,11 @@ header .navbar-default.scrolled .navbar-brand img {
 header .navbar-default.scrolled ul.navbar-nav {
   padding-top: 15px;
 }
+
+/************************************************/
+/*NOVOS AJUSTES NO TEMPLATE/
+/************************************************/
+
 .scrollpoint {
   opacity: 0;
 }
