@@ -816,19 +816,19 @@ header .navbar-default ul.navbar-nav li a:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default.scrolled {
-  border-bottom: 3px solid #336799;
+  border-bottom: 3px solid #24af9c;
 }
 header .navbar-default.scrolled ul.navbar-nav li a {
-  color: #336799;
+  color: #24af9c;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover {
-  color: #336799;
+  color: #24af9c;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
-  background: #336799;
+  background: #24af9c;
 }
 header .navbar-default.scrolled .navbar-brand {
-  background: #336799;
+  background: #24af9c;
 }
 section .section-heading .divider:after {
   background: #66cdcc;
