@@ -456,6 +456,14 @@ section#support .media .media-heading a {
 footer {
   padding: 80px 0;
   text-align: center;
+  background: rgba(12,150,132,1) !important;
+  background: -moz-linear-gradient(left, rgba(12,150,132,1) 0%, rgba(36,207,185,1) 100%) !important;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,150,132,1)), color-stop(100%, rgba(36,207,185,1)));
+  background: -webkit-linear-gradient(left, rgba(12,150,132,1) 0%, rgba(36,207,185,1) 100%) !important;
+  background: -o-linear-gradient(left, rgba(12,150,132,1) 0%, rgba(36,207,185,1) 100%) !important;
+  background: -ms-linear-gradient(left, rgba(12,150,132,1) 0%, rgba(36,207,185,1) 100%) !important;
+  background: linear-gradient(to right, rgba(12,150,132,1) 0%, rgba(36,207,185,1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c9684', endColorstr='#24cfb9', GradientType=1 );
 }
 footer a > img {
   width: 100px;
