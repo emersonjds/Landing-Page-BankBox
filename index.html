@@ -170,13 +170,13 @@
 							<img src="assets/img/freeze/freeze-angled2.png" alt="">
 						</div>
 						<div class="platforms">
-							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect1">
+							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect1 btn-android">
 								<i class="fa fa-android fa-3x pull-left"></i>
 								<span>Download para</span><br>
 								<b>Android</b>
 							</a>
 
-							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect2">
+							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect2 btn-ios">
 								<i class="fa fa-apple fa-3x pull-left"></i>
 								<span>Download para</span><br>
 								<b>Apple IOS</b>
@@ -463,26 +463,26 @@
     			<div class="three">
     				<img src="assets/img/freeze/screens/despesas.jpg" alt="">
     				<h4>Despesas</h4>
-    				</div>
-    				<div class="one">
-    					<img src="assets/img/freeze/screens/login.jpg" alt="">
-    					<h4>Acesso</h4>
-    				</div>
-    				<div class="one">
-    					<img src="assets/img/freeze/screens/pagamentos.png" alt="">
-    					<h4>Area de Pagamentos</h4>
-    				</div>
-    				<div class="two">
-    					<img src="assets/img/freeze/screens/investir.jpg" alt="">
-    					<h4>Area de Investimentos</h4>
-    				</div>
-    				<div class="three">
-    					<img src="assets/img/freeze/screens/sales.jpg" alt="">
-    					<h4>Analise de Gastos</h4>
-    				</div>
+    			</div>
+    			<div class="one">
+    				<img src="assets/img/freeze/screens/login.jpg" alt="">
+    				<h4>Acesso</h4>
+    			</div>
+    			<div class="one">
+    				<img src="assets/img/freeze/screens/pagamentos.png" alt="">
+    				<h4>Area de Pagamentos</h4>
+    			</div>
+    			<div class="two">
+    				<img src="assets/img/freeze/screens/investir.jpg" alt="">
+    				<h4>Area de Investimentos</h4>
+    			</div>
+    			<div class="three">
+    				<img src="assets/img/freeze/screens/sales.jpg" alt="">
+    				<h4>Analise de Gastos</h4>
     			</div>
     		</div>
-    	</section>
+    	</div>
+    </section>
 
 <!--     <section id="demo">
         <div class="container">
@@ -589,6 +589,7 @@
 <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/newScript.js"></script>
 <script src="assets/js/scripts.js"></script>
 <script>
 	$(document).ready(function() {
@@ -602,6 +603,39 @@
 </script>
 </body>
 
+<div class="modal fade dados-de-usuario-android" tabindex="-1" role="dialog" id="dados-de-usuario-android">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, enquanto isso informe seu e-mail para ser um dos primeiros a usufruir desta nova tecnologia</p>
+				<form>
+					<div class="form-group has-feedback">
+						<label class="control-label">Email</label>
+						<input type="text" class="form-control" placeholder="exemplo@exemplo.com" required validate />
+					</div>
+					<button type="submit" class="btn btn-info">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade dados-de-usuario-ios" tabindex="-1" role="dialog" id="dados-de-usuario-ios">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, enquanto isso informe seu e-mail para ser um dos primeiros a usufruir desta nova tecnologia</p>
+				<form>
+					<div class="form-group has-feedback">
+						<label class="control-label">Email</label>
+						<input type="text" class="form-control" placeholder="exemplo@exemplo.com" required validate />
+					</div>
+					<button type="submit" class="btn btn-info">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Mirrored from www.scoopthemes.com/templates/Oleose/Freeze/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 17:27:42 GMT -->
 </html>
