@@ -673,6 +673,7 @@ form textarea.form-control {
     -ms-border-radius: 0em;
     -o-border-radius: 0em;
     border-radius: 0em;
+
   }
   header .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -779,7 +780,7 @@ header .navbar-default ul.navbar-nav li a {
   background: none;
 }
 header .navbar-default ul.navbar-nav li a.getApp {
-  color: #3c79b4;
+  color: #25af9e;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
