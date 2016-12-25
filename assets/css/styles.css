@@ -1088,7 +1088,7 @@ form .form-control:focus {
   }
   header .navbar-default ul.navbar-nav li a {
     color: #ffffff;
-    border-bottom: 1px solid #376fa4;
+    border-bottom: 1px solid #fff;
   }
   header .navbar-default ul.navbar-nav li a.getApp {
     color: #ffffff;
@@ -1100,10 +1100,10 @@ form .form-control:focus {
     color: #66cdcc;
   }
   header .navbar-default .navbar-collapse {
-    background: #336799;
+    background: #40b5a5;
   }
   header .navbar-default.scrolled {
-    background: #336799;
+    background: #24af9c !important;
   }
   header .navbar-default.scrolled ul.navbar-nav li a {
     color: #ffffff;
