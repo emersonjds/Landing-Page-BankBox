@@ -261,13 +261,14 @@ section#reviews .review-filtering .review .review-person {
   width: 100%;
 }
 section#reviews .review-filtering .review .review-person img {
-  width: 110px;
+  width: 80px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   margin: 10px auto;
+  height: 80px;
 }
 section#reviews .review-filtering .review .review-comment {
   width: 100%;
