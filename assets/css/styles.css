@@ -1124,4 +1124,8 @@ form .form-control:focus {
 .msg-modal {
   font-size: 15px;
 }
+
+.btn-enviar {
+  background-color: #24af9c;
+}
 /**********************************************************/
