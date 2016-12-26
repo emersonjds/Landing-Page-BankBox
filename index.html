@@ -138,7 +138,7 @@
 					</li>
 					<li><a href="#reviews">Depoimentos</a>
 					</li>
-					<li><a href="#screens">Imagens</a>
+					<li><a href="#screens">Telas</a>
 					</li>
 					
 					<li><a class="getApp" href="#getApp">Baixar App</a>
@@ -263,7 +263,7 @@
 						</a>
 						<div class="media-body">
 							<h3 class="media-heading">Desempenho</h3>
-							Aqui você visualiza um gráfico dividido em categorias, e em com ranking das principais despesas.
+							Aqui você visualiza um gráfico dividido em categorias, e com ranking das principais despesas.
 						</div>
 					</div>
 					<div class="media text-right feature">
@@ -589,6 +589,7 @@
 <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
+<script src="node_modules/moment/moment.js"></script>
 <script src="assets/js/newScript.js"></script>
 <script src="assets/js/scripts.js"></script>
 <script>
@@ -607,11 +608,11 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-body">
-				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, enquanto isso informe seu e-mail para ser um dos primeiros a usufruir desta nova tecnologia</p>
+				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, informe seu e-mail para avisarmos assim que o app estiver disponível</p>
 				<form>
 					<div class="form-group has-feedback">
 						<label class="control-label">Email</label>
-						<input type="text" class="form-control" placeholder="exemplo@exemplo.com" required validate />
+						<input type="text" class="form-control" placeholder="exemplo@exemplo.com" required validate name="email"/>
 					</div>
 					<button type="submit" class="btn btn-info">Enviar</button>
 				</form>
@@ -624,7 +625,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-body">
-				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, enquanto isso informe seu e-mail para ser um dos primeiros a usufruir desta nova tecnologia</p>
+				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, informe seu e-mail para avisarmos assim que o app estiver disponível</p>
 				<form>
 					<div class="form-group has-feedback">
 						<label class="control-label">Email</label>
