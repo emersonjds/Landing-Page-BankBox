@@ -202,6 +202,11 @@ section#about .about-item {
   font-size: 17px;
   line-height: 25px;
   color: #999999;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
 }
 section#about .about-item i.fa {
   -webkit-border-radius: 50%;
@@ -1127,5 +1132,11 @@ form .form-control:focus {
 
 .btn-enviar {
   background-color: #24af9c;
+}
+
+.fa-bicycle, .fa-handshake-o {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /**********************************************************/
