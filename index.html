@@ -604,41 +604,21 @@
 </script>
 </body>
 
-<div class="modal fade dados-de-usuario-android" tabindex="-1" role="dialog" id="dados-de-usuario-android">
+<div class="modal fade dados-de-usuario" tabindex="-1" role="dialog" id="dados-de-usuario">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-body">
-				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, informe seu e-mail para avisarmos assim que o app estiver disponível</p>
-				<form>
+				<p class="msg-modal">Ooops! ainda não estamos com tudo pronto, mas assim que estivermos você será um dos primeiros a ser avisado!</p>
+				<form id="informacoes-usuario" method="POST">
 					<div class="form-group has-feedback">
-						<label class="control-label">Nome</label>
-						<input type="text" id="nome-usuario-android" class="form-control" placeholder="Informe seu nome" required name="nome"/>
+						<label class="control-label">Nome:</label>
+						<input type="text" id="nome-usuario" class="form-control" required name="nome"/>
 					</div>
 					<div class="form-group has-feedback">
-						<label class="control-label">Email</label>
-						<input type="text" id="email-usuario-android" class="form-control" placeholder="exemplo@exemplo.com" required validate name="email"/>
+						<label class="control-label">E-mail:</label>
+						<input type="email" id="email-usuario" class="form-control" required validate name="email"/>
 					</div>
-					<button type="submit" class="btn btn-info btn-enviar">Enviar</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade dados-de-usuario-ios" tabindex="-1" role="dialog" id="dados-de-usuario-ios">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-body">
-				<p class="msg-modal">Estamos trabalhando arduamente para disponibilizar o aplicativo em todas as plataformas, informe seu e-mail para avisarmos assim que o app estiver disponível</p>
-				<form>
-					<div class="form-group has-feedback">
-						<label class="control-label">Nome</label>
-						<input type="text" id="nome-usuario-ios" class="form-control" placeholder="Informe seu nome" required name="nome"/>
-					</div>
-					<div class="form-group has-feedback">
-						<label class="control-label">Email</label>
-						<input type="text" id="email-usuario-ios" class="form-control" placeholder="exemplo@exemplo.com" required validate name="email"/>
-					</div>
+					<input type="hidden" id="plataforma-escolhida" name="plataforma" value="" />
 					<button type="submit" class="btn btn-info btn-enviar">Enviar</button>
 				</form>
 			</div>

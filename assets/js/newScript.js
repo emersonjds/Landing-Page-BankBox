@@ -1,36 +1,94 @@
 $(document).ready(function () {
 
-	var date = new Date ();
-	var contClickAndroid = 0;
-	var contClickIos = 0;
-
-
 	$('.btn-android').click(function(event) {
 		event.preventDefault();
-		$('#dados-de-usuario-android').modal();
-
-		var dia = date;
-		contClickAndroid++;
-
-		$.ajax({
-			url: '/path/to/file',
-			type: 'POST',
-			data: {
-				email: $('input[name=email]').val()	
-			}
-		}, 
-		success = function() {
-
-		}, 
-		error = function(e) {
-
-		})
+		upClick('ANDROID');
+		$('input#plataforma-escolhida').val('ANDROID');		
+		
 	});
 
 	$('.btn-ios').click(function(event) {
 		event.preventDefault();
-		$('#dados-de-usuario-ios').modal();
+		upClick('iOS');
+		$('input#plataforma-escolhida').val('iOS');
+
 	});
 
+	$('#informacoes-usuario').submit(function (e) {
+            e.preventDefault();
+            var data = $(this).serializeFormJSON();
+            
+        $.ajax({
+				// Captura a URL de envio do form
+				url: "assets/php/salvaInformacoes.php",
+				
+				// Captura o método de envio do form
+				type: 'POST',
+				
+				// Os dados do form
+				data: data,
+				
+				//qual será  o tipo de dados que a página irá retornar;
+				dataType: "json",
+				
+				// Se enviado com sucesso
+				success: function(dados) {
+					//após salvar o clique abre o modal
+					//alert(dados[0]);
+					if(dados[0] == "sucesso"){
+						$('#dados-de-usuario').modal('hide');
+                    } else {
+                        
+                    }
+				}
+		});
+    });
 	
 });
+
+function upClick(qPlataforma){
+	$.ajax({
+				// Captura a URL de envio do form
+				url: "assets/php/salvaClique.php",
+				
+				// Captura o método de envio do form
+				type: 'POST',
+				
+				// Os dados do form
+				data: {plataforma:qPlataforma},
+				
+				//qual será  o tipo de dados que a página irá retornar;
+				dataType: "json",
+				
+				// Se enviado com sucesso
+				success: function(dados) {
+					//após salvar o clique abre o modal
+					//alert(dados[0]);
+					if(dados[0] == "sucesso"){
+                        $('#dados-de-usuario').modal();
+                    } else {
+                        
+                    }
+				}
+		});
+	
+}
+
+(function ($) {
+    $.fn.serializeFormJSON = function () {
+
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+})(jQuery);
