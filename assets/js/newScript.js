@@ -3,8 +3,7 @@ $(document).ready(function () {
 	$('.btn-android').click(function(event) {
 		event.preventDefault();
 		upClick('ANDROID');
-		$('input#plataforma-escolhida').val('ANDROID');		
-		
+		$('input#plataforma-escolhida').val('ANDROID');	
 	});
 
 	$('.btn-ios').click(function(event) {
@@ -13,6 +12,12 @@ $(document).ready(function () {
 		$('input#plataforma-escolhida').val('iOS');
 
 	});
+
+	$('.btn-android').click(function(event) {
+		event.preventDefault();
+	});
+
+
 
 	$('#informacoes-usuario').submit(function (e) {
             e.preventDefault();
@@ -35,10 +40,12 @@ $(document).ready(function () {
 				success: function(dados) {
 					//após salvar o clique abre o modal
 					//alert(dados[0]);
+
 					if(dados[0] == "sucesso"){
 						$('#dados-de-usuario').modal('hide');
+						toastr.success("Dados cadastrados com sucesso, agora é só aguardar.");
                     } else {
-                        
+                    	toastr.warning("Houve algum tipo de falha na operação tente novamente");
                     }
 				}
 		});
@@ -66,6 +73,7 @@ function upClick(qPlataforma){
 					//alert(dados[0]);
 					if(dados[0] == "sucesso"){
                         $('#dados-de-usuario').modal();
+                        
                     } else {
                         
                     }

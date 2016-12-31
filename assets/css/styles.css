@@ -1167,6 +1167,41 @@ form .form-control:focus {
 }
 /**********************************************************/
 
+
+/* SCREEN 768 >  */
+@media screen and (min-width: 768px) {
+
+  .toast.toast-success {
+    display: flex;
+    align-items: center;
+    top: 400px;
+    right: 200px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
+  }
+
+  .toast.toast-warning {
+    display: flex;
+    align-items: center;
+    top: 400px;
+    right: 200px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
+  }
+}
+/**********************************************************/
+
+
 /* SCREEN 1200 >  */
 @media screen and (min-width: 1200px) {
 
@@ -1176,6 +1211,34 @@ form .form-control:focus {
 
   .pull-right {
     margin-top: 1.5em;
+  }
+
+  .toast.toast-success {
+    display: flex;
+    align-items: center;
+    top: 170px;
+    right: 510px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
+  }
+
+  .toast.toast-warning {
+    display: flex;
+    align-items: center;
+    top: 170px;
+    right: 510px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
   }
 }
 /**********************************************************/
@@ -1191,5 +1254,51 @@ form .form-control:focus {
   .pull-right {
     margin-top: 1.5em;
   }
+
+  .toast.toast-success {
+    display: flex;
+    align-items: center;
+    top: 170px;
+    right: 610px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
+  }
+
+  .toast.toast-warning {
+    display: flex;
+    align-items: center;
+    top: 170px;
+    right: 610px;
+    height: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    opacity: 3 !important;
+    background-color: #24cfb9;
+    text-transform: uppercase;
+  }
 }
 /**********************************************************/
+
+.toast.toast-success {
+  display: block;
+  top: 120px;
+  margin-right: 100px;
+  opacity: 3 !important;
+  background-color: #24cfb9;
+  text-transform: uppercase;
+}
+
+.toast.toast-warning {
+  display: block;
+  top: 120px;
+  margin-right: 100px;
+  opacity: 3 !important;
+  background-color: #24cfb9;
+  text-transform: uppercase;
+}
