@@ -40,10 +40,11 @@ $(document).ready(function () {
 				success: function(dados) {
 					//após salvar o clique abre o modal
 					//alert(dados[0]);
-
+					$('#dados-de-usuario').modal('hide');
 					if(dados[0] == "sucesso"){
-						$('#dados-de-usuario').modal('hide');
-						toastr.success("Dados cadastrados com sucesso, agora é só aguardar.");
+						
+						//toastr.success("Dados cadastrados com sucesso, agora é só aguardar.");
+						window.location.href = "/obrigado/";
                     } else {
                     	toastr.warning("Houve algum tipo de falha na operação tente novamente");
                     }
@@ -54,6 +55,7 @@ $(document).ready(function () {
 });
 
 function upClick(qPlataforma){
+	$('#dados-de-usuario').modal();
 	$.ajax({
 				// Captura a URL de envio do form
 				url: "assets/php/salvaClique.php",
@@ -72,7 +74,6 @@ function upClick(qPlataforma){
 					//após salvar o clique abre o modal
 					//alert(dados[0]);
 					if(dados[0] == "sucesso"){
-                        $('#dados-de-usuario').modal();
                         
                     } else {
                         
