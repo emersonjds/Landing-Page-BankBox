@@ -1195,7 +1195,6 @@ form .form-control:focus {
     align-items: center;
     justify-content: center;
     opacity: 3 !important;
-    background-color: #24cfb9;
     text-transform: uppercase;
   }
 }
@@ -1237,8 +1236,12 @@ form .form-control:focus {
     align-items: center;
     justify-content: center;
     opacity: 3 !important;
-    background-color: #24cfb9;
     text-transform: uppercase;
+  }
+
+  .img-menu {
+    height: 379px;
+    width: 224px;
   }
 }
 /**********************************************************/
@@ -1279,8 +1282,12 @@ form .form-control:focus {
     align-items: center;
     justify-content: center;
     opacity: 3 !important;
-    background-color: #24cfb9;
     text-transform: uppercase;
+  }
+
+  .img-menu {
+    height: 379px;
+    width: 224px;
   }
 }
 /**********************************************************/
@@ -1299,6 +1306,5 @@ form .form-control:focus {
   top: 120px;
   margin-right: 100px;
   opacity: 3 !important;
-  background-color: #24cfb9;
   text-transform: uppercase;
 }

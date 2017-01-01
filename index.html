@@ -1,483 +1,436 @@
-<!doctype html>
-<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
-<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
+	<!doctype html>
+	<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+	<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+	<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+	<!--[if gt IE 8]><!-->
+	<html lang="en" class="no-js">
+	<!--<![endif]-->
 
 
-<!-- Mirrored from www.scoopthemes.com/templates/Oleose/Freeze/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 17:26:52 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-	<meta charset="UTF-8">
-	<title>BankBox</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+	<!-- Mirrored from www.scoopthemes.com/templates/Oleose/Freeze/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 17:26:52 GMT -->
+	<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+	<head>
+		<meta charset="UTF-8">
+		<title>BankBox</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
 
-	<!-- Bootstrap 3.3.2 -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Bootstrap 3.3.2 -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="assets/css/animate.css">
-	
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
-	
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
-	<link href="assets/css/toastr.css" rel="stylesheet"/>
+		
+		<link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+		<link href="assets/css/toastr.css" rel="stylesheet"/>
 
-	<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
 
 
-	<script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
 
-	<style>
-		.home-ad{
-			position: fixed;
-			right: 20px;
-			top:200px;
-			border: 1px solid #f2f2f2;
-			background: rgb(255, 255, 255);
-			border-radius: 0;
-			z-index: 9999;
-		}
-		.home-ad .close{
-			float: right;
-			color: #FFF;
-			background: #6B6B6B;
-			width: 20px;
-			height: 20px;
-			line-height: 16px;
-			display: inline-block;
-			font-size: 12px;
-			font-weight: normal;
-			text-align: center;
-			text-decoration: none;
-			text-shadow: none;
-			margin-bottom: 5px;
-		}
-		.home-ad div#carbonads {
-			padding: 10px;
-			max-width: 150px;
-		}
-		.home-ad div#carbonads a.carbon-img {
-			display: inline-block;
-			float: left; 
-		}
-		.home-ad div#carbonads .carbon-wrap:after {
-			content: "";
-			display: block;
-			clear: both; 
-		}
-		.home-ad div#carbonads .carbon-text {
-			font-size: 12px;
-			text-align: left;
-			color: #333;
-			display: block;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			clear: both;
-		}
-		.home-ad div#carbonads .carbon-text:hover {
-			text-decoration: none; 
-		}
-		.home-ad div#carbonads .carbon-poweredby {
-			font-size: 75%;
-			color: #bebebe; 
-		}
-	</style>
+		<style>
+			.home-ad{
+				position: fixed;
+				right: 20px;
+				top:200px;
+				border: 1px solid #f2f2f2;
+				background: rgb(255, 255, 255);
+				border-radius: 0;
+				z-index: 9999;
+			}
+			.home-ad .close{
+				float: right;
+				color: #FFF;
+				background: #6B6B6B;
+				width: 20px;
+				height: 20px;
+				line-height: 16px;
+				display: inline-block;
+				font-size: 12px;
+				font-weight: normal;
+				text-align: center;
+				text-decoration: none;
+				text-shadow: none;
+				margin-bottom: 5px;
+			}
+			.home-ad div#carbonads {
+				padding: 10px;
+				max-width: 150px;
+			}
+			.home-ad div#carbonads a.carbon-img {
+				display: inline-block;
+				float: left; 
+			}
+			.home-ad div#carbonads .carbon-wrap:after {
+				content: "";
+				display: block;
+				clear: both; 
+			}
+			.home-ad div#carbonads .carbon-text {
+				font-size: 12px;
+				text-align: left;
+				color: #333;
+				display: block;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				clear: both;
+			}
+			.home-ad div#carbonads .carbon-text:hover {
+				text-decoration: none; 
+			}
+			.home-ad div#carbonads .carbon-poweredby {
+				font-size: 75%;
+				color: #bebebe; 
+			}
+		</style>
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  </head>
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-  <body>
+	<body>
 
-  	<div class="pre-loader">
-  		<div class="load-con">
-  			<img src="assets/img/freeze/logo.png" class="animated fadeInDown" alt="">
-  			<div class="spinner">
-  				<div class="bounce1"></div>
-  				<div class="bounce2"></div>
-  				<div class="bounce3"></div>
-  			</div>
-  		</div>
-  	</div>
-
-  <!-- <div class="home-ad">
-    <a href="javascript:void(0)" class="close">x</a>
-    <script async type="text/javascript" src="../../../../cdn.carbonads.com/carbon86c4.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=scoopthemes" id="_carbonads_js"></script>
-</div>
--->
-<header>
-
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="fa fa-bars fa-lg"></span>
-				</button>
-				<a class="navbar-brand" href="index-2.html">
-					<img src="assets/img/freeze/logo.png" alt="" class="logo">
-				</a>
+		<div class="pre-loader">
+			<div class="load-con">
+				<img src="assets/img/freeze/logo.png" class="animated fadeInDown" alt="">
+				<div class="spinner">
+					<div class="bounce1"></div>
+					<div class="bounce2"></div>
+					<div class="bounce3"></div>
+				</div>
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about">Sobre</a>
-					</li>
-					<li><a href="#features">Caracteristicas</a>
-					</li>
-					<li><a href="#reviews">Depoimentos</a>
-					</li>
-					<li><a href="#screens">Telas</a>
-					</li>
-					
-					<li><a class="getApp" href="#getApp">Baixar App</a>
-					</li>
-					<li><a href="#support">Contato</a>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
 		</div>
-		<!-- /.container-->
-	</nav>
+
+	<!-- <div class="home-ad">
+		<a href="javascript:void(0)" class="close">x</a>
+		<script async type="text/javascript" src="../../../../cdn.carbonads.com/carbon86c4.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=scoopthemes" id="_carbonads_js"></script>
+	</div>
+	-->
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+					<a class="navbar-brand" href="index-2.html">
+						<img src="assets/img/freeze/logo.png" alt="" class="logo">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">Sobre</a>
+						</li>
+						<li><a href="#features">Caracteristicas</a>
+						</li>
+						<li><a href="#reviews">Depoimentos</a>
+						</li>
+						<li><a href="#screens">Telas</a>
+						</li>
+						
+						<li><a class="getApp" href="#getApp">Baixar App</a>
+						</li>
+						<li><a href="#support">Contato</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-->
+		</nav>
 
 
-	<!--RevSlider-->
-	<!-- <div class="tp-banner-container">
-	<div class="tp-banner"> -->
-		<section id="getApp">
-			<div class="container-fluid">
-				<div class="section-heading inverse scrollpoint sp-effect3">
-					<h1>Baixe o App</h1>
+		<!--RevSlider-->
+		<!-- <div class="tp-banner-container">
+		<div class="tp-banner"> -->
+			<section id="getApp">
+				<div class="container-fluid">
+					<div class="section-heading inverse scrollpoint sp-effect3">
+						<h1>Baixe o App</h1>
+						<div class="divider"></div>
+						<p>Disponivel para todas as plataformas</p>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
+								<img src="assets/img/freeze/freeze-angled2.png" alt="">
+							</div>
+							<div class="platforms">
+								<a href="#" class="btn btn-primary inverse scrollpoint sp-effect1 btn-android">
+									<i class="fa fa-android fa-3x pull-left"></i>
+									<span>Download para</span><br>
+									<b>Android</b>
+								</a>
+
+								<a href="#" class="btn btn-primary inverse scrollpoint sp-effect2 btn-ios">
+									<i class="fa fa-apple fa-3x pull-left"></i>
+									<span>Download para</span><br>
+									<b>Apple IOS</b>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- </div>
+		</div> -->
+		
+
+	</header>
+
+
+	<div class="wrapper">
+
+		<section id="about">
+			<div class="container">
+
+				<div class="section-heading scrollpoint sp-effect3">
+					<h1>Sobre Nós</h1>
 					<div class="divider"></div>
-					<p>Disponivel para todas as plataformas</p>
+					<p>Nós somos a Bankbox, uma plataforma de educação financeira para crianças, baseada na experiência de compra real. E como podemos ensinar educação financeira para seus filhos?</p>
 				</div>
 
 				<div class="row">
-					<div class="col-md-12">
-						<div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
-							<img src="assets/img/freeze/freeze-angled2.png" alt="">
+					<div class="col-md-3 col-sm-3 col-xs-6" >
+						<div class="about-item scrollpoint sp-effect5">
+							<i class="fa fa-pencil fa-2x"></i>
+							<h3>Educação Financeira</h3>
+							<p>Aprenda a gerencia o dinheiro da sua mesada.</p>
 						</div>
-						<div class="platforms">
-							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect1 btn-android">
-								<i class="fa fa-android fa-3x pull-left"></i>
-								<span>Download para</span><br>
-								<b>Android</b>
-							</a>
-
-							<a href="#" class="btn btn-primary inverse scrollpoint sp-effect2 btn-ios">
-								<i class="fa fa-apple fa-3x pull-left"></i>
-								<span>Download para</span><br>
-								<b>Apple IOS</b>
-							</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="about-item scrollpoint sp-effect2">
+							<i class="fa fa-eye fa-2x"></i>
+							<h3>Consciência de Gastos</h3>
+							<p>Monitore suas despesas e veja o saldo da sua carteira virtual.</p>
 						</div>
-
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6" >
+						<div class="about-item scrollpoint sp-effect5">
+							<i class="fa fa-handshake-o fa-2x"></i>
+							<h3>Expêriencia de Compra</h3>
+							<p>Faça pagamentos pelo próprio aplicativo, pela leitura do QR code.</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-6" >
+						<div class="about-item scrollpoint sp-effect1">
+							<i class="fa fa-bicycle fa-2x"></i>
+							<h3>Planejamento</h3>
+							<p>Adicione seus desejos e crie metas para chegar ao seu objetivo.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- </div>
-	</div> -->
+
+		<section id="features">
+			<div class="container">
+				<div class="section-heading scrollpoint sp-effect3">
+					<h1>Características</h1>
+					<div class="divider"></div>
+					<p>Entenda as funcionalidades do App</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 scrollpoint sp-effect1">
+						<div class="media text-right feature">
+							<a class="pull-right" href="#">
+								<i class="fa fa-bar-chart fa-2x"></i>
+							</a>
+							<div class="media-body">
+								<h3 class="media-heading">Controle de Gastos e Saldo</h3>
+								No controle de gastos você pode acompanhar o saldo e suas despesas.
+							</div>
+						</div>
+						<div class="media text-right feature">
+							<a class="pull-right" href="#">
+								<i class="fa fa-pie-chart fa-2x"></i>
+							</a>
+							<div class="media-body">
+								<h3 class="media-heading">Desempenho</h3>
+								Aqui você visualiza um gráfico dividido em categorias, e com ranking das principais despesas.
+							</div>
+						</div>
+						<div class="media text-right feature">
+							<a class="pull-right" href="#">
+								<i class="fa fa-calendar-o fa-2x"></i>
+							</a>
+							<div class="media-body">
+								<h3 class="media-heading">Investimento</h3>
+								Com o simulador de investimento queremos possibilitar que a criança comece a entender os conceitos do que é investir o dinheiro.
+							</div>
+						</div>
+						<div class="media text-right feature">
+							<a class="pull-right" href="#">
+								<i class="fa fa-credit-card-alt fa-2x"></i>
+							</a>
+							<div class="media-body">
+								<h3 class="media-heading">Pagamento</h3>
+								Na função de pagamento, a criança com o aplicativo faz a leitura do QR code e realiza os pagamentos.
+							</div>
+						</div>
+						<div class="media text-right feature">
+							<a class="pull-right" href="#">
+								<i class="fa fa-gift fa-2x"></i>
+							</a>
+							<div class="media-body">
+								<h3 class="media-heading">Metas</h3>
+								Na meta adicione um produto que queria comprar, e estabeleça um valor como objetivo.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4" >
+						<img src="assets/img/freeze/iphone-freeze.png" class="img-responsive scrollpoint sp-effect5 img-celular" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
 	
 
-</header>
+		<section id="screens">
+			<div class="container">
 
+				<div class="section-heading scrollpoint sp-effect3">
+					<h1>Telas</h1>
+					<div class="divider"></div>
+					<p>Veja algumas demonstrações do app funcionando</p>
+				</div>
 
-<div class="wrapper">
-
-	<section id="about">
-		<div class="container">
-
-			<div class="section-heading scrollpoint sp-effect3">
-				<h1>Sobre Nós</h1>
-				<div class="divider"></div>
-				<p>Nós somos a Bankbox, uma plataforma de educação financeira para crianças, baseada na experiência de compra real. E como podemos ensinar educação financeira para seus filhos?</p>
+				<div class="filter scrollpoint sp-effect3">
+					<a href="javascript:void(0)" class="button js-filter-all active">Todas as telas</a>
+					<a href="javascript:void(0)" class="button js-filter-one">Acesso de Usuario</a>
+					<a href="javascript:void(0)" class="button js-filter-two">Investimentos</a>
+					<a href="javascript:void(0)" class="button js-filter-three">Graficos de Desempenho</a>
+				</div>
+				<div class="slider filtering scrollpoint sp-effect5" >
+					<div class="one">
+						<img src="assets/img/freeze/screens/profile.jpg" alt="">
+						<h4>Pagina de Usuario</h4>
+					</div>
+					<div class="two">
+						<img src="assets/img/freeze/screens/setting.jpg" alt="" class="img-menu">
+						<h4>Menu de Navegação</h4>
+					</div>
+					<div class="three">
+						<img src="assets/img/freeze/screens/despesas.jpg" alt="">
+						<h4>Despesas</h4>
+					</div>
+					<div class="one">
+						<img src="assets/img/freeze/screens/login.jpg" alt="">
+						<h4>Acesso</h4>
+					</div>
+					<div class="one">
+						<img src="assets/img/freeze/screens/pagamentos.png" alt="">
+						<h4>Area de Pagamentos</h4>
+					</div>
+					<div class="two">
+						<img src="assets/img/freeze/screens/investir.jpg" alt="">
+						<h4>Area de Investimentos</h4>
+					</div>
+					<!-- <div class="three">
+						<img src="assets/img/freeze/screens/sales.jpg" alt="">
+						<h4>Analise de Gastos</h4>
+					</div> -->
+				</div>
 			</div>
+		</section>
 
-			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-6" >
-					<div class="about-item scrollpoint sp-effect5">
-						<i class="fa fa-pencil fa-2x"></i>
-						<h3>Educação Financeira</h3>
-						<p>Aprenda a gerencia o dinheiro da sua mesada.</p>
-					</div>
+	<!--     <section id="demo">
+			<div class="container">
+				<div class="section-heading scrollpoint sp-effect3">
+					<h1>Demo</h1>
+					<div class="divider"></div>
+					<p>Take a closer look in more detail</p>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-					<div class="about-item scrollpoint sp-effect2">
-						<i class="fa fa-eye fa-2x"></i>
-						<h3>Consciência de Gastos</h3>
-						<p>Monitore suas despesas e veja o saldo da sua carteira virtual.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6" >
-					<div class="about-item scrollpoint sp-effect5">
-						<i class="fa fa-handshake-o fa-2x"></i>
-						<h3>Expêriencia de Compra</h3>
-						<p>Faça pagamentos pelo próprio aplicativo, pela leitura do QR code.</p>
-					</div>
-				</div>
-				
-				<div class="col-md-3 col-sm-3 col-xs-6" >
-					<div class="about-item scrollpoint sp-effect1">
-						<i class="fa fa-bicycle fa-2x"></i>
-						<h3>Planejamento</h3>
-						<p>Adicione seus desejos e crie metas para chegar ao seu objetivo.</p>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 scrollpoint sp-effect2">
+						<div class="video-container" >
+							<iframe src="http://player.vimeo.com/video/70984663"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section> -->
 
-	<section id="features">
-		<div class="container">
-			<div class="section-heading scrollpoint sp-effect3">
-				<h1>Características</h1>
-				<div class="divider"></div>
-				<p>Entenda as funcionalidades do App</p>
+		<footer>
+			<div class="container">
+				<a href="#" class="scrollpoint sp-effect3">
+					<img src="assets/img/freeze/logo.png" alt="" class="logo">
+				</a>
+				<div class="social">
+					<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+					<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+					<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+				</div>
+				<div class="rights">
+					<p> &copy BankBox | Todos os direitos reservados | 2016</p>
+					<!--  <p>Template by <a href="http://www.scoopthemes.com/" target="_blank">ScoopThemes</a></p> -->
+				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 scrollpoint sp-effect1">
-					<div class="media text-right feature">
-						<a class="pull-right" href="#">
-							<i class="fa fa-bar-chart fa-2x"></i>
-						</a>
-						<div class="media-body">
-							<h3 class="media-heading">Controle de Gastos e Saldo</h3>
-							No controle de gastos você pode acompanhar o saldo e suas despesas.
-						</div>
-					</div>
-					<div class="media text-right feature">
-						<a class="pull-right" href="#">
-							<i class="fa fa-pie-chart fa-2x"></i>
-						</a>
-						<div class="media-body">
-							<h3 class="media-heading">Desempenho</h3>
-							Aqui você visualiza um gráfico dividido em categorias, e com ranking das principais despesas.
-						</div>
-					</div>
-					<div class="media text-right feature">
-						<a class="pull-right" href="#">
-							<i class="fa fa-calendar-o fa-2x"></i>
-						</a>
-						<div class="media-body">
-							<h3 class="media-heading">Investimento</h3>
-							Com o simulador de investimento queremos possibilitar que a criança comece a entender os conceitos do que é investir o dinheiro.
-						</div>
-					</div>
-					<div class="media text-right feature">
-						<a class="pull-right" href="#">
-							<i class="fa fa-credit-card-alt fa-2x"></i>
-						</a>
-						<div class="media-body">
-							<h3 class="media-heading">Pagamento</h3>
-							Na função de pagamento, a criança com o aplicativo faz a leitura do QR code e realiza os pagamentos.
-						</div>
-					</div>
-					<div class="media text-right feature">
-						<a class="pull-right" href="#">
-							<i class="fa fa-gift fa-2x"></i>
-						</a>
-						<div class="media-body">
-							<h3 class="media-heading">Metas</h3>
-							Na meta adicione um produto que queria comprar, e estabeleça um valor como objetivo.
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4" >
-					<img src="assets/img/freeze/iphone-freeze.png" class="img-responsive scrollpoint sp-effect5 img-celular" alt="">
-				</div>
-                <!-- <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
-                    <div class="media feature">
-                        <a class="pull-left" href="#">
-                            <i class="fa fa-map-marker fa-2x"></i>
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">My Places</h3>
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                    <div class="media feature">
-                        <a class="pull-left" href="#">
-                            <i class="fa fa-film fa-2x"></i>
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Media Player™</h3>
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                    <div class="media feature">
-                        <a class="pull-left" href="#">
-                            <i class="fa fa-compass fa-2x"></i>
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Intuitive Statistics</h3>
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                    <div class="media feature">
-                        <a class="pull-left" href="#">
-                            <i class="fa fa-picture-o fa-2x"></i>
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Weather on-the-go</h3>
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                    <div class="media active feature">
-                        <a class="pull-left" href="#">
-                            <i class="fa fa-plus fa-2x"></i>
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">And much more!</h3>
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-   
-
-    <section id="screens">
-    	<div class="container">
-
-    		<div class="section-heading scrollpoint sp-effect3">
-    			<h1>Telas</h1>
-    			<div class="divider"></div>
-    			<p>Veja algumas demonstrações do app funcionando</p>
-    		</div>
-
-    		<div class="filter scrollpoint sp-effect3">
-    			<a href="javascript:void(0)" class="button js-filter-all active">Todas as telas</a>
-    			<a href="javascript:void(0)" class="button js-filter-one">Acesso de Usuario</a>
-    			<a href="javascript:void(0)" class="button js-filter-two">Investimentos</a>
-    			<a href="javascript:void(0)" class="button js-filter-three">Graficos de Desempenho</a>
-    		</div>
-    		<div class="slider filtering scrollpoint sp-effect5" >
-    			<div class="one">
-    				<img src="assets/img/freeze/screens/profile.jpg" alt="">
-    				<h4>Pagina de Usuario</h4>
-    			</div>
-    			<div class="two">
-    				<img src="assets/img/freeze/screens/setting.jpg" alt="">
-    				<h4>Menu de Navegação</h4>
-    			</div>
-    			<div class="three">
-    				<img src="assets/img/freeze/screens/despesas.jpg" alt="">
-    				<h4>Despesas</h4>
-    			</div>
-    			<div class="one">
-    				<img src="assets/img/freeze/screens/login.jpg" alt="">
-    				<h4>Acesso</h4>
-    			</div>
-    			<div class="one">
-    				<img src="assets/img/freeze/screens/pagamentos.png" alt="">
-    				<h4>Area de Pagamentos</h4>
-    			</div>
-    			<div class="two">
-    				<img src="assets/img/freeze/screens/investir.jpg" alt="">
-    				<h4>Area de Investimentos</h4>
-    			</div>
-    			<!-- <div class="three">
-    				<img src="assets/img/freeze/screens/sales.jpg" alt="">
-    				<h4>Analise de Gastos</h4>
-    			</div> -->
-    		</div>
-    	</div>
-    </section>
-
-<!--     <section id="demo">
-        <div class="container">
-            <div class="section-heading scrollpoint sp-effect3">
-                <h1>Demo</h1>
-                <div class="divider"></div>
-                <p>Take a closer look in more detail</p>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 scrollpoint sp-effect2">
-                    <div class="video-container" >
-                        <iframe src="http://player.vimeo.com/video/70984663"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <footer>
-    	<div class="container">
-    		<a href="#" class="scrollpoint sp-effect3">
-    			<img src="assets/img/freeze/logo.png" alt="" class="logo">
-    		</a>
-    		<div class="social">
-    			<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-    			<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
-    			<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-    		</div>
-    		<div class="rights">
-    			<p> &copy BankBox | Todos os direitos reservados | 2016</p>
-    			<!--  <p>Template by <a href="http://www.scoopthemes.com/" target="_blank">ScoopThemes</a></p> -->
-    		</div>
-    	</div>
-    </footer>
+		</footer>
 
 
 
-</div>
-<script src="assets/js/jquery-1.11.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
-<script src="assets/js/placeholdem.min.js"></script>
-<script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<script src="node_modules/toastr/toastr.js"></script>
-<script src="assets/js/newScript.js"></script>
-<script src="assets/js/scripts.js"></script>
-<script>
-	$(document).ready(function() {
-		appMaster.preLoader();
+	</div>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/placeholdem.min.js"></script>
+	<script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="node_modules/toastr/toastr.js"></script>
+	<script src="assets/js/newScript.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script>
+		$(document).ready(function() {
+			appMaster.preLoader();
 
-		$('.home-ad .close').on('click', function(){
-			$(this).parent().toggle('fast');
+			$('.home-ad .close').on('click', function(){
+				$(this).parent().toggle('fast');
+			});
 		});
-	});
-</script>
-</body>
+	</script>
+	</body>
 
-<div class="modal fade dados-de-usuario" tabindex="-1" role="dialog" id="dados-de-usuario">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-body">
-				<p class="msg-modal">Ooops! ainda não estamos com tudo pronto, mas assim que estivermos você será um dos primeiros a ser avisado!</p>
-				<form id="informacoes-usuario" method="POST">
-					<div class="form-group has-feedback">
-						<label class="control-label">Nome:</label>
-						<input type="text" id="nome-usuario" class="form-control" required name="nome"/>
-					</div>
-					<div class="form-group has-feedback">
-						<label class="control-label">E-mail:</label>
-						<input type="email" id="email-usuario" class="form-control" required validate name="email"/>
-					</div>
-					<input type="hidden" id="plataforma-escolhida" name="plataforma" value="" />
-					<button type="submit" class="btn btn-info btn-enviar">Enviar</button>
-				</form>
+	<div class="modal fade dados-de-usuario" tabindex="-1" role="dialog" id="dados-de-usuario">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p class="msg-modal">Ooops! ainda não estamos com tudo pronto, mas assim que estivermos você será um dos primeiros a ser avisado!</p>
+					<form id="informacoes-usuario" method="POST">
+						<div class="form-group has-feedback">
+							<label class="control-label">Nome:</label>
+							<input type="text" id="nome-usuario" class="form-control" required name="nome"/>
+						</div>
+						<div class="form-group has-feedback">
+							<label class="control-label">E-mail:</label>
+							<input type="email" id="email-usuario" class="form-control" required validate name="email"/>
+						</div>
+						<input type="hidden" id="plataforma-escolhida" name="plataforma" value="" />
+						<button type="submit" class="btn btn-info btn-enviar">Enviar</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- Mirrored from www.scoopthemes.com/templates/Oleose/Freeze/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 17:27:42 GMT -->
-</html>
+	<!-- Mirrored from www.scoopthemes.com/templates/Oleose/Freeze/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 17:27:42 GMT -->
+	</html>
