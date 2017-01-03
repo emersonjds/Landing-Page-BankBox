@@ -42,8 +42,6 @@ $(document).ready(function () {
 					//alert(dados[0]);
 					$('#dados-de-usuario').modal('hide');
 					if(dados[0] == "sucesso"){
-						
-						//toastr.success("Dados cadastrados com sucesso, agora é só aguardar.");
 						window.location.href = "/obrigado/";
                     } else {
                     	toastr.warning("Houve algum tipo de falha na operação tente novamente");

@@ -4,6 +4,8 @@ body {
   font-family: 'Lato', Arial;
   color: #666666;
   -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
 }
 a {
   font-family: 'Lato', Arial;
@@ -110,4 +112,74 @@ h6,
 .btn.btn-primary.inverse:hover {
   color: #ffffff;
   background: #ffbc1a;
+}
+
+.area-de-patrocinio {
+  height: 30px;
+}
+
+.content-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 320px) {
+  .main-obrigado {
+    height: calc(100% - 30px);
+  }
+
+  .content-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1, p {
+    margin-top: 0;
+  }
+
+  .section-heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-obrigado {
+    height: calc(100% - 30px);
+    margin-top: 15em;  
+  }
+
+  .content-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1, p {
+    margin-top: 0;
+  }
+
+  .section-heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-obrigado {
+    margin-top: 10em;  
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main-obrigado {
+    margin-top: 11em;  
+  }
 }
